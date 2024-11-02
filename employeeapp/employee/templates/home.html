@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Welcome to the Employee Portal</h1>
+        <p>Please <a href="{% url 'signup' %}">sign up</a> or <a href="{% url 'login' %}">log in</a>.</p>
+        <h2>Employee Management Links</h2>
+        <ul>
+            <li><a href="{% url 'employee_list' %}">View All Employees</a></li>
+            <li><a href="{% url 'employee_create' %}">Add New Employee</a></li>
+        </ul>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h1 {
+            color: #343a40;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #007bff;
+        }
+        a {
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Welcome to the Employee Portal</h1>
+        <p class="text-center">Please <a href="{% url 'signup' %}">sign up</a> or <a href="{% url 'login' %}">log in</a>.</p>
+        <h2 class="text-center">Employee Management Links</h2>
+        <ul class="list-group mt-4">
+            <li class="list-group-item text-center">
+                <a href="{% url 'employee_list' %}" class="btn btn-primary">View All Employees</a>
+            </li>
+            <li class="list-group-item text-center">
+                <a href="{% url 'employee_create' %}" class="btn btn-success">Add New Employee</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
